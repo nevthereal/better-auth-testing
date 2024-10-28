@@ -6,9 +6,7 @@
 <div>
 	{#if $session.data}
 		<div>
-			<p>
-				{$session?.data?.user.name}
-			</p>
+			<p>{$session.data.user.name}</p>
 			<button
 				onclick={async () => {
 					await client.signOut();
